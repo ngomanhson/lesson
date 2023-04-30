@@ -5,7 +5,7 @@
 :root {
     --primary-color: #ffb900;
     --font-heading: Sen, sans-serif;
-    --animation: 0.2s linear;
+    --animation: all 0.2s linear;
 }
 
 html {
@@ -423,9 +423,15 @@ a {
     background: #2e2100;
 }
 
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback-item {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -473,6 +479,7 @@ a {
 
 .feedback-item .content {
     width: 66%;
+    margin-left: auto;
 }
 
 .feedback blockquote {
