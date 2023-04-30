@@ -18,6 +18,17 @@ body {
 }
 
 /* ======= Common ====== */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
+
 a {
     text-decoration: none;
 }
@@ -63,6 +74,10 @@ a {
 .heading.lv2 {
     font-size: 3.8rem;
     line-height: 1.26;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 /* ======= Header ====== */
@@ -358,6 +373,7 @@ a {
 }
 
 .popular .course-item .title a {
+    padding-right: 6px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
